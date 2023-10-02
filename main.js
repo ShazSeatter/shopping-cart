@@ -1,12 +1,13 @@
 import './style.css'
 
+
 import { initializeApp} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 
 document.querySelector('#app').innerHTML = `
   <div class="container">
-    <img src="assets/shopping-basket.png"/>
+    <img src="images/shopping-basket.png"/>
     <input id="input-field" type="text" placeholder="Enter a item..."/>    
     <button id="add-btn">Add to cart</button>
     <ul id="shopping-list">
